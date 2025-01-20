@@ -3854,11 +3854,7 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
-          body: SafeArea(
-            child: DropdownMenu<TestMenu>(
-              dropdownMenuEntries: menuChildren,
-            ),
-          ),
+          body: SafeArea(child: DropdownMenu<TestMenu>(dropdownMenuEntries: menuChildren)),
         ),
       ),
     );
@@ -3870,10 +3866,7 @@ void main() {
       MaterialApp(
         home: Scaffold(
           body: SafeArea(
-            child: DropdownMenu<TestMenu>(
-              dropdownMenuEntries: menuChildren,
-              maxLines: 2,
-            ),
+            child: DropdownMenu<TestMenu>(dropdownMenuEntries: menuChildren, maxLines: 2),
           ),
         ),
       ),
